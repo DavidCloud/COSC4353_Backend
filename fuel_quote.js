@@ -22,7 +22,7 @@ form.addEventListener('submit', (event) =>
     //the correct user fuel quote history
 });
 
-//Export fuel_quote object to have in 
+//priceModule for calculating current fuel quote
 class priceModule {
 
     constructor(quote) {
@@ -33,5 +33,4 @@ class priceModule {
         quote = galRequest * price;
         return quote
     }
-
-  }
+}
