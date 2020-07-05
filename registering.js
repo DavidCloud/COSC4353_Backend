@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) =>
     const addr1 = formData.get('addr1');
     const addr2 = formData.get('addr2');
     const city = formData.get('city');
-    const state = formData.get('states');
+    const state = formData.get('state');
     const zipcode = formData.get('zipcode');
 
     const profile_complete = {
