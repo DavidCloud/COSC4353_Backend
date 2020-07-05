@@ -43,6 +43,19 @@ app.post('/profile', (req, res) =>
     }
 });
 
+app.post('/profile_complete', (req, res) =>
+{
+    const profile_complete = {
+        name: req.body.name.toString(),
+        addr1: req.body.addr1.toString(),
+        addr2: req.body.addr2.toString(),
+        city: req.body.city.toString(),
+        state: req.body.state.toString(),
+        zipcode: req.body.zipcode.toString(),
+    };
+    console.log(profile_complete);
+});
+
 //setting up our server to listen on port 5000 for requests
 app.listen(5000, () => 
 {
