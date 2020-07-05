@@ -1,5 +1,6 @@
 //Worked on by Stephen Mackey
 const form =  document.querySelector('form'); //grabbing element on page
+const API_URL = 'http://localhost:5000/profile_complete';
 
 form.addEventListener('submit', (event) =>
 {
@@ -20,6 +21,14 @@ form.addEventListener('submit', (event) =>
         state,
         zipcode
     };
+    console.log(profile_complete);
+    fetch(API_URL, {
+        method: 'POST',
+        body: JSON.stringify(profile_complete),
+        headers: {
+            'content-type': 'application/json'
+        }
+    });
     //after this we will access the database and put this information into 
     //the correct user information to complete the profile information
 });
