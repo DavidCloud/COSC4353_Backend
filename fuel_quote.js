@@ -9,11 +9,11 @@ form.addEventListener('submit', (event) =>
     const formData = new FormData(form);
 
     const galRequest = formData.get('gallons');
-    // const delvAddr = formData.get('delvAddr')
-    const delvAddr = "Client's Address"
+    const delvAddr = formData.get('delvAddr')
+    //const delvAddr = "Client's Address"
     const delvDate = formData.get('delvDate');
-    // const price = formData.get('price')
-    const price = galRequest * 1.823;
+    const price = formData.get('price')
+    // const price = galRequest * 1.823;
 
     const fuel_quote = {
         galRequest,
