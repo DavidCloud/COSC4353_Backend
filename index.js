@@ -56,6 +56,17 @@ app.post('/profile_complete', (req, res) =>
     console.log(profile_complete);
 });
 
+app.post('/fuel_quote', (req, res) =>
+{
+    const fuel_quote = {
+        galRequest: req.body.galRequest.toString(),
+        delvAddr: req.body.delvAddr.toString(),
+        delvDate: req.body.delvDate.toString(),
+        price: req.body.price.toString(),
+    };
+    console.log(fuel_quote);
+});
+
 //setting up our server to listen on port 5000 for requests
 app.listen(5000, () => 
 {
