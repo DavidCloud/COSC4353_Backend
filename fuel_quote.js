@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) =>
     event.preventDefault();
     const formData = new FormData(form);
 
-    const galRequest = formData.get('gallons');
+    const galRequest = formData.get('galRequest');
     const delvAddr = formData.get('delvAddr')
     //const delvAddr = "Client's Address"
     const delvDate = formData.get('delvDate');
