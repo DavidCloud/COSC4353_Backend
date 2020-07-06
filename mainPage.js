@@ -1,4 +1,4 @@
-// Worked on by Stephen Mackey
+// Worked on by Stephen Mackey and Travis Bostick
 // client side Js
 const form = document.querySelector('form');
 const API_URL = 'http://localhost:5000/profile';
