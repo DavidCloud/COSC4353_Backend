@@ -1,4 +1,4 @@
-//Worked on by David Cloud
+//Worked on by David Cloud and Travis Bostick
 
 const form =  document.querySelector('form'); //grabbing element on page
 const API_URL = 'http://localhost:5000/fuel_quote';
